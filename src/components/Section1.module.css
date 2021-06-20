@@ -1,0 +1,115 @@
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*align-items: center;*/
+    padding: 103px 0px 140px 0px;
+    gap: 65px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    min-height: 850px;
+}
+
+
+.wording_wrapper {
+    font-family: 'Spoof Trial';
+    max-width: 582px;
+    /*max-height: 246px;*/
+    order: 2;
+    /*text-align: right;*/
+}
+
+.sub {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.head {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 98px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+}
+
+
+@media screen and (max-width: 1224px) {
+    .head {
+        font-size: 80px;
+    }
+
+}
+
+@media screen and (max-width: 549px) {
+    .head {
+        font-size: 54px;
+    }
+
+    .sub {
+        font-size: 22px;
+    }
+
+}
+
+
+
+.floating_line_dektop {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 47%;
+    width: auto;
+    height: 421px;
+    z-index: 9;
+}
+
+.floating_line_dektop > img {
+    width: 200px;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+.description_mobile {
+    display: none;
+    margin-top: 24px;
+}
+
+
+@media screen and (max-width: 1110px) {
+
+    section {
+        flex-direction: column;
+        min-height: 1800px;
+        justify-content: unset;
+        padding-top: 60px;
+    }
+
+    .wording_wrapper {
+        order: 1;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+    .description_mobile {
+        display: block;
+    }
+
+    .floating_line_dektop {
+        display: none;
+    }
+}
+
+
+

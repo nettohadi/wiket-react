@@ -1,0 +1,60 @@
+.hero_image_wrapper {
+    position: relative;
+    padding: 0px 105px 0px 84px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+}
+
+.hero_image {
+    order: 1;
+    width: 416px;
+    max-width: 416px;
+    height: auto;
+    border-radius: 24px;
+}
+
+.hero_desc {
+    margin: 15px 0px;
+    order: 2;
+    text-align: left;
+    width: 416px;
+    max-width: 416px;
+}
+
+
+
+.caption_name {
+    font-family: Faible;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.caption_description {
+    font-family: Faible;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+}
+
+@media screen and (max-width: 1110px) {
+    .hero_image_wrapper {
+        order: 2 ;
+        padding: 0px;
+    }
+
+    .hero_image {
+        order: 2;
+        width: 100%;
+    }
+
+    .hero_desc {
+        order: 1;
+        width: 100%;
+    }
+}

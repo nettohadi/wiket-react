@@ -1,0 +1,41 @@
+.floating_card_1,
+.floating_card_2,
+.floating_card_3 {
+    position: absolute;
+    background-color: transparent;
+}
+
+.floating_card_1 {
+    top: calc(30% - 90px);
+    left: 30px;
+}
+
+.pin_02 {
+    margin-bottom: 15px;
+}
+
+.pin_01 {
+    margin-bottom: 15px;
+    height: 41.61px;
+    margin-left: 40%;
+}
+
+.floating_card_2 {
+    padding: 5px;
+    top: 4%;
+    right: 50px;
+}
+
+.floating_card_3 {
+    padding: 5px;
+    top: 37%;
+    right: 0px;
+}
+
+@media screen and (max-width: 1110px) {
+    .floating_card_1,
+    .floating_card_2,
+    .floating_card_3 {
+        display: none;
+    }
+}

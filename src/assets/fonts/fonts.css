@@ -1,0 +1,25 @@
+.main-content {
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+@font-face {
+    font-family: 'Cera pro';
+    src: url('./cera_pro_font/Cera_Pro_Medium.woff') format('woff');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Spoof Trial';
+    src: url('./SpoofTrial/SpoofTrial-Regular.woff') format('woff');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Faible';
+    src: url('./Faible/Faible-Regular.woff') format('woff');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}

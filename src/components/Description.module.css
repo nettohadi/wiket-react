@@ -1,0 +1,16 @@
+.desc {
+    font-family: Faible;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    width: 350px;
+    height: 90px;
+}
+
+@media screen and (max-width: 1110px) {
+    .desc {
+        /*width: 292px;*/
+    }
+
+}
