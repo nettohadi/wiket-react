@@ -17,7 +17,8 @@ export default function Section1() {
         if (isMobile()) {
             options = {
                 y: 60,
-                delay: .1
+                delay: .1,
+                scale: 1
             }
         }
 
