@@ -4,7 +4,8 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 150%;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 90px;
 }
 
