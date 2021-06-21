@@ -1,28 +1,112 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import hero from "../assets/images/header-img-florist.jpg";
-import pin02 from "../assets/svg/pin-02.svg";
-import Card1 from "./Card1";
-import card1Img from "../assets/images/header-img-gardener.jpg";
-import card2Img from "../assets/images/header-img-pottery.jpg";
-import pin01 from "../assets/svg/pin-01.svg";
-import card3Img from "../assets/images/header-img-barista.jpg";
 import FloatingCards from "./FloatingCards";
-import FloatingCardsMobile from "./FloatingCardsMobile";
+import {gsap} from 'gsap';
+
+const timeline = gsap.timeline();
 
 export default function Hero() {
+    const heroImage = React.useRef(null);
+    const floatingCards = React.useRef([]);
+    const floatingSvgs = React.useRef([]);
+
+    React.useEffect(() => {
+        timeline
+            .from(heroImage.current, {
+                y: 30,
+                opacity: 0,
+                ease: 'none',
+                delay: .3,
+                duration: 0.5
+            })
+            .from(floatingCards.current[1], {
+                y: 50,
+                opacity: 0,
+                ease: 'none',
+                duration: 0.5,
+            }, '-=.3')
+            .from(floatingCards.current[0], {
+                y: 50,
+                opacity: 0,
+                ease: 'none',
+            }, '-=.3')
+            .from(floatingCards.current[2], {
+                y: 50,
+                opacity: 0,
+                ease: 'none',
+            }, '-=.1')
+            .from(floatingSvgs.current[0], {
+                opacity: 0,
+                ease: 'none',
+                delay: .2
+            })
+            .from(floatingSvgs.current[1], {
+                opacity: 0,
+                ease: 'none',
+            }, '-=.4')
+
+        gsap.to(floatingCards.current[1], {
+            y: 10,
+            ease: 'none',
+            duration: 3,
+            delay: 1.3,
+            repeat: -1,
+            yoyo: true
+        });
+
+        gsap.to(floatingSvgs.current[0], {
+            y: 10,
+            ease: 'none',
+            duration: 3,
+            delay: 1.3,
+            repeat: -1,
+            yoyo: true
+        });
+
+        gsap.to(floatingSvgs.current[1], {
+            y: 10,
+            ease: 'none',
+            duration: 3,
+            delay: 1.3,
+            repeat: -1,
+            yoyo: true
+        });
+
+        gsap.to(floatingCards.current[0], {
+            y: 10,
+            ease: 'none',
+            duration: 3,
+            delay: 1.3,
+            repeat: -1,
+            yoyo: true
+        });
+
+        gsap.to(floatingCards.current[2], {
+            y: 10,
+            ease: 'none',
+            duration: 3,
+            delay: 1.3,
+            repeat: -1,
+            yoyo: true
+        });
+
+    });
+
     return (
         <div className={styles.hero_image_wrapper}>
-            <img  className={styles.hero_image} src={hero} alt="hero image"/>
-            <div className={styles.hero_desc}>
-                <div className={styles.caption_name + ' primary-font-color'}>
-                    Hanging Garden
-                </div>
-                <div className={styles.caption_description + ' primary-font-color'}>
-                    Florist in Bangkok
+            <div ref={heroImage} style={{display: 'flex', flexDirection: 'column'}}>
+                <img className={styles.hero_image} src={hero} alt="hero image"/>
+                <div className={styles.hero_desc}>
+                    <div className={styles.caption_name + ' primary-font-color'}>
+                        Hanging Garden
+                    </div>
+                    <div className={styles.caption_description + ' primary-font-color'}>
+                        Florist in Bangkok
+                    </div>
                 </div>
             </div>
-            <FloatingCards/>
+            <FloatingCards floatingCards={floatingCards} floatingSvgs={floatingSvgs}/>
         </div>
     );
 }

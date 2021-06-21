@@ -26,7 +26,7 @@ section {
     font-weight: 400;
     font-size: 30px;
     line-height: 140%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .head {
@@ -59,7 +59,7 @@ section {
 
 
 
-.floating_line_dektop {
+.floating_line_desktop {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -71,7 +71,7 @@ section {
     z-index: 9;
 }
 
-.floating_line_dektop > img {
+.floating_line_desktop > img {
     width: 200px;
     object-fit: cover;
     object-position: right;
@@ -106,7 +106,7 @@ section {
         display: block;
     }
 
-    .floating_line_dektop {
+    .floating_line_desktop {
         display: none;
     }
 }
