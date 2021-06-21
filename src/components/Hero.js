@@ -91,7 +91,7 @@ export default function Hero() {
             yoyo: true
         });
 
-    });
+    }, []);
 
     return (
         <div className={styles.hero_image_wrapper}>

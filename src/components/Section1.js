@@ -42,7 +42,8 @@ export default function Section1() {
                 y: 50,
             }, '-=1');
         }
-    });
+    }, []);
+
     return (
         <section>
             {/* Hero Image */}

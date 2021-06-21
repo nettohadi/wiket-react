@@ -48,7 +48,7 @@ export default function FloatingCardsMobile() {
                     opacity: 0,
                     ease: 'none'
                 }, '-=.7');
-    });
+    }, []);
 
     return (
         <div className={styles.wrapper}>
