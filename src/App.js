@@ -4,15 +4,22 @@ import './App.css';
 import Header from "./components/Header";
 import Section1 from "./components/Section1";
 import FloatingCardsMobile from "./components/FloatingCardsMobile";
+import {gsap} from "gsap";
 
 function App() {
-    // const [state, setState] = React.useState(0);
-    // const handleClick = () => {
-    //     setState(s => s + 1)
-    // }
+
+    const main = React.useRef(null);
+
+    React.useEffect(() => {
+        //prevent flickering on initial load
+        gsap.to(main.current, {
+            css: {visibility: 'visible'},
+            duration: 0
+        });
+    });
 
     return (
-        <main>
+        <main ref={main}>
             <Header/>
             <Section1/>
             <FloatingCardsMobile/>
