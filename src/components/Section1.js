@@ -16,7 +16,7 @@ export default function Section1() {
         let options = {};
         if (isMobile()) {
             options = {
-                y: 50,
+                y: 60,
                 delay: .1
             }
         }

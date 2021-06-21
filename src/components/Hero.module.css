@@ -57,4 +57,12 @@
         order: 1;
         width: 100%;
     }
+
+    .caption_name {
+        font-size: 17px;
+    }
+
+    .caption_description {
+        font-size: 15px;
+    }
 }
