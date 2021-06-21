@@ -1,8 +1,8 @@
 import logo from '../assets/svg/wiket-logo.svg'
-import styles from './NavBar.module.css';
+import styles from './Header.module.css';
 import menuIcon from '../assets/images/menu-icon.png';
 
-export default function NavBar() {
+export default function Header() {
     return (
         <header>
             <div className={styles.logo_wrapper}>

@@ -1,6 +1,6 @@
 import './assets/fonts/fonts.css';
 import './App.css';
-import NavBar from "./components/NavBar";
+import Header from "./components/Header";
 import Section1 from "./components/Section1";
 import FloatingCardsMobile from "./components/FloatingCardsMobile";
 
@@ -8,7 +8,7 @@ import FloatingCardsMobile from "./components/FloatingCardsMobile";
 function App() {
   return (
     <main>
-        <NavBar/>
+        <Header/>
         <Section1/>
         <FloatingCardsMobile/>
     </main>
