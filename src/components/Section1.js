@@ -32,7 +32,9 @@ export default function Section1(){
             {/*  SVG Image  */}
             <div className={styles.floating_line_dektop}>
                 <img src={headerLineDesktop} alt="pin line"/>
-                <Description/>
+                <div style={{paddingTop: 70}}>
+                    <Description/>
+                </div>
             </div>
         </section>
     );

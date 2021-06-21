@@ -23,7 +23,6 @@ export default function Hero() {
                 </div>
             </div>
             <FloatingCards/>
-
         </div>
     );
 }

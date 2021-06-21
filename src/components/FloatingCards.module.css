@@ -15,21 +15,21 @@
 }
 
 .pin_01 {
-    margin-bottom: 15px;
+    margin-bottom: 27.39px;
     height: 41.61px;
     margin-left: 40%;
 }
 
 .floating_card_2 {
     padding: 5px;
-    top: 4%;
+    top: 40px;
     right: 50px;
 }
 
 .floating_card_3 {
     padding: 5px;
-    top: 37%;
-    right: 0px;
+    top: 270px;
+    right: -10px;
 }
 
 @media screen and (max-width: 1110px) {
