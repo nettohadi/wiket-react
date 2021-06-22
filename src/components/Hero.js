@@ -39,13 +39,11 @@ export default function Hero() {
                 y: 50,
                 opacity: 0,
                 ease: 'none',
-                duration: 0.8,
             }, '-=.3')
             .from(floatingCards.current[2], {
                 y: 50,
                 opacity: 0,
                 ease: 'none',
-                duration: 0.8,
             }, '-=.1')
             .from(floatingSvgs.current[0], {
                 opacity: 0,
@@ -87,7 +85,7 @@ export default function Hero() {
         gsap.to(floatingCards.current[0], {
             y: 10,
             ease: 'none',
-            duration: 3,
+            duration: 5,
             delay: 1.3,
             repeat: -1,
             yoyo: true
@@ -96,7 +94,7 @@ export default function Hero() {
         gsap.to(floatingCards.current[2], {
             y: 10,
             ease: 'none',
-            duration: 3,
+            duration: 5,
             delay: 1.3,
             repeat: -1,
             yoyo: true
