@@ -18,7 +18,8 @@ export default function Section1() {
             options = {
                 y: 60,
                 delay: .1,
-                scale: 1
+                scale: 1,
+                duration: .7
             }
         }
 
