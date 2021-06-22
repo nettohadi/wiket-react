@@ -13,15 +13,12 @@ section {
 
 
 .wording_wrapper {
-    font-family: 'Spoof Trial';
     max-width: 582px;
-    /*max-height: 246px;*/
     order: 2;
-    /*text-align: right;*/
 }
 
 .sub {
-    font-family: inherit;
+    font-family: 'Spoof Trial';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -30,7 +27,7 @@ section {
 }
 
 .head {
-    font-family: inherit;
+    font-family: 'Spoof Trial';
     font-style: normal;
     font-weight: bold;
     font-size: 98px;
