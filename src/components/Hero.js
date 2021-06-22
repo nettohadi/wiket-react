@@ -39,11 +39,13 @@ export default function Hero() {
                 y: 50,
                 opacity: 0,
                 ease: 'none',
+                duration: 0.8,
             }, '-=.3')
             .from(floatingCards.current[2], {
                 y: 50,
                 opacity: 0,
                 ease: 'none',
+                duration: 0.8,
             }, '-=.1')
             .from(floatingSvgs.current[0], {
                 opacity: 0,
