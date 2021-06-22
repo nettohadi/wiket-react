@@ -3,6 +3,7 @@ import styles from "./Hero.module.css";
 import hero from "../assets/images/header-img-florist.jpg";
 import FloatingCards from "./FloatingCards";
 import {gsap} from 'gsap';
+import {isMobile} from "../helpers";
 
 const timeline = gsap.timeline();
 
@@ -12,13 +13,21 @@ export default function Hero() {
     const floatingSvgs = React.useRef([]);
 
     React.useEffect(() => {
+        let options = {};
+        if (isMobile()) {
+            options = {
+                delay: .8
+            }
+        }
+
         timeline
             .from(heroImage.current, {
                 y: 30,
                 opacity: 0,
                 ease: 'none',
                 delay: .3,
-                duration: 0.5
+                duration: 0.5,
+                ...options
             })
             .from(floatingCards.current[1], {
                 y: 50,
