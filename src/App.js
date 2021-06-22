@@ -14,7 +14,7 @@ function App() {
         //prevent flickering on initial load
         gsap.to(main.current, {
             css: {visibility: 'visible'},
-            delay: .3,
+            delay: .4,
             duration: 0
         });
     });
